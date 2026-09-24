@@ -1,0 +1,11 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/TF2Configurator/TF2Configurator.csproj" />
+  </Folder>
+  <Folder Name="/tools/">
+    <Project Path="tools/SmokeTest/SmokeTest.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/TF2Configurator.Tests/TF2Configurator.Tests.csproj" />
+  </Folder>
+</Solution>

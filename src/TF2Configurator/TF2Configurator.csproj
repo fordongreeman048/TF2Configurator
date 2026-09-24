@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <LangVersion>latest</LangVersion>
+    <RootNamespace>TF2Configurator</RootNamespace>
+    <AssemblyName>TF2Configurator</AssemblyName>
+    <Version>1.1.0</Version>
+    <Product>TF2 Configurator</Product>
+    <ApplicationIcon>Assets\app.ico</ApplicationIcon>
+    <ApplicationHighDpiMode>PerMonitorV2</ApplicationHighDpiMode>
+    <ApplicationDefaultFont>Segoe UI, 9pt</ApplicationDefaultFont>
+    <EnableWindowsTargeting>true</EnableWindowsTargeting>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- Bundled snapshot of mastercomfig's own data. Refreshable at runtime from GitHub. -->
+    <EmbeddedResource Include="Assets\modules.json" LogicalName="TF2Configurator.modules.json" />
+    <EmbeddedResource Include="Assets\preset_modules.json" LogicalName="TF2Configurator.preset_modules.json" />
+    <EmbeddedResource Include="Assets\module_values.json" LogicalName="TF2Configurator.module_values.json" />
+  </ItemGroup>
+
+</Project>
